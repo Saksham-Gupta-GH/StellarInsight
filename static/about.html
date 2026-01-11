@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About - Star Type Classification</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <main class="shell">
+      <header class="header">
+        <div class="title">ABOUT STARFINDER</div>
+        <div class="subtitle">Understanding the Cosmos & The Science Behind It</div>
+      </header>
+
+      <section class="panel">
+        <div class="panelTitle">Star Classifications</div>
+        <div class="content-block">
+          <p><strong>Red Dwarf (Type 0):</strong> Small, cool, and faint stars. They are the most common type of star in the Milky Way but are hard to see with the naked eye.</p>
+          <p><strong>Brown Dwarf (Type 1):</strong> Often called "failed stars," they are substellar objects that are not massive enough to sustain nuclear fusion of ordinary hydrogen-1 in their cores.</p>
+          <p><strong>White Dwarf (Type 2):</strong> The dense stellar core remnant left after a star like the Sun has exhausted its nuclear fuel and shed its outer layers.</p>
+          <p><strong>Main Sequence (Type 3):</strong> Stars that are fusing hydrogen into helium in their cores. Our Sun is a classic Main Sequence star (G-type).</p>
+          <p><strong>Super Giants (Type 4):</strong> Among the most massive and luminous stars. They are near the end of their stellar lives and may explode as supernovae.</p>
+          <p><strong>Hyper Giants (Type 5):</strong> The most massive and luminous stars known. They are extremely rare and have short lifespans.</p>
+        </div>
+
+        <div class="panelTitle" style="margin-top: 24px;">Input Parameters</div>
+        <div class="content-block">
+          <p><strong>Temperature (K):</strong> The effective surface temperature of the star in Kelvin.</p>
+          <p><strong>Luminosity (L / Lo):</strong> The total amount of energy emitted by the star per unit time, relative to the Sun (Lo).</p>
+          <p><strong>Radius (R / Ro):</strong> The radius of the star relative to the Sun (Ro).</p>
+          <p><strong>Absolute Magnitude (Mv):</strong> A measure of the intrinsic brightness of the star. Lower (more negative) values mean brighter stars.</p>
+          <p><strong>Spectral Class:</strong> The Morgan–Keenan (MK) system classifying stars based on their spectral characteristics (O, B, A, F, G, K, M).</p>
+        </div>
+
+        <div class="panelTitle" style="margin-top: 24px;">Methodology & Tools</div>
+        <div class="content-block">
+          <p>This project uses a machine learning approach to classify stars based on physical characteristics.</p>
+          <ul>
+            <li><strong>Dataset:</strong> A NASA-inspired dataset containing 240 stellar observations.</li>
+            <li><strong>Tech Stack:</strong> Python, Flask, Scikit-learn, Pandas, NumPy.</li>
+            <li><strong>Models Evaluated:</strong> Logistic Regression, Random Forest Classifier, K-Nearest Neighbors.</li>
+            <li><strong>Best Model:</strong> Logistic Regression was selected for its high accuracy (100% on test set) and interpretability.</li>
+            <li><strong>Validation:</strong> The system implements domain-aware validation to detect inputs that are physically impossible for standard stars (e.g., potential black holes or neutron stars).</li>
+          </ul>
+        </div>
+
+        <div class="actions" style="justify-content: flex-start; margin-top: 24px;">
+          <a href="/" class="btn">Back to Predictor</a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footerLine">Created by Saksham Gupta</div>
+      </footer>
+    </main>
+  </body>
+</html>

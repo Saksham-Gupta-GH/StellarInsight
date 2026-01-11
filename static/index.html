@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Star Type Classification</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <main class="shell">
+      <header class="header">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <div>
+            <div class="title">STAR TYPE CLASSIFICATION</div>
+            <div class="subtitle">NASA-inspired stellar parameter classifier</div>
+          </div>
+          <a href="/about.html" class="btn" style="font-size: 12px; padding: 6px 10px;">About</a>
+        </div>
+      </header>
+
+      <section class="panel">
+        <div class="panelTitle">Input Parameters</div>
+        <div class="grid">
+          <label class="field">
+            <span>Temperature (K)</span>
+            <div class="range-wrap">
+              <input id="TemperatureRange" type="range" min="2000" max="40000" step="100" value="5800" />
+              <input id="Temperature" type="number" step="1" value="5800" />
+            </div>
+          </label>
+          <label class="field">
+            <span>Luminosity (L / Lo)</span>
+            <div class="range-wrap">
+              <input id="LRange" type="range" min="0" max="850000" step="0.0001" value="1.0" />
+              <input id="L" type="number" step="any" value="1.0" />
+            </div>
+          </label>
+          <label class="field">
+            <span>Radius (R / Ro)</span>
+            <div class="range-wrap">
+              <input id="RRange" type="range" min="0" max="2000" step="0.01" value="1.0" />
+              <input id="R" type="number" step="any" value="1.0" />
+            </div>
+          </label>
+          <label class="field">
+            <span>Absolute Magnitude (Mv)</span>
+            <div class="range-wrap">
+              <input id="A_MRange" type="range" min="-12" max="20" step="0.01" value="4.83" />
+              <input id="A_M" type="number" step="any" value="4.83" />
+            </div>
+          </label>
+          <label class="field">
+            <span>Color</span>
+            <select id="Color"></select>
+          </label>
+          <label class="field">
+            <span>Spectral Class</span>
+            <select id="Spectral_Class"></select>
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="predictBtn" class="btn">Predict Star Type</button>
+        </div>
+
+        <div id="message" class="message"></div>
+        <div id="result" class="result"></div>
+
+        <div id="imageWrap" class="imageWrap hidden">
+          <img id="resultImage" class="resultImage" alt="" />
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footerLine">Model-backed classification with domain-aware validation.</div>
+      </footer>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
+

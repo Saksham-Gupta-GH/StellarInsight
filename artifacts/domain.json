@@ -1,0 +1,48 @@
+{
+  "allowed_colors": [
+    "Blue",
+    "Blue White",
+    "Blue white",
+    "Blue-White",
+    "Blue-white",
+    "Orange",
+    "Orange-Red",
+    "Pale yellow orange",
+    "Red",
+    "White",
+    "White-Yellow",
+    "Whitish",
+    "Yellowish",
+    "Yellowish White",
+    "white",
+    "yellow-white",
+    "yellowish"
+  ],
+  "allowed_spectral_classes": [
+    "A",
+    "B",
+    "F",
+    "G",
+    "K",
+    "M",
+    "O"
+  ],
+  "numeric_ranges": {
+    "A_M": [
+      -11.92,
+      20.06
+    ],
+    "L": [
+      8e-05,
+      849420.0
+    ],
+    "R": [
+      0.0084,
+      1948.5
+    ],
+    "Temperature": [
+      1939.0,
+      40000.0
+    ]
+  }
+}
